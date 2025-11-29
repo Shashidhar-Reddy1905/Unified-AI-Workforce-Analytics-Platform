@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChronoIntel | Unified AI Workforce Analytics Platform</title>
+  <meta
+    name="description"
+    content="ChronoIntel is a master's research project that analyzes how AI adoption reshapes technical roles, skills, and workforce trends from 2010–2025 using an interactive analytics dashboard."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a href="#home" class="skip-link">Skip to main content</a>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo" aria-label="ChronoIntel logo">
+        <span class="logo-mark">AI</span>
+        <span class="logo-text">ChronoIntel</span>
+      </div>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#executive-summary">Executive Summary</a>
+        <a href="#problem-context">Problem & Stakeholders</a>
+        <a href="#research-insights">Research</a>
+        <a href="#solution">Solution</a>
+        <a href="#project-charter">Charter</a>
+        <a href="#data-design">Data</a>
+        <a href="#er-diagram">ERD</a>
+        <a href="#data-flow">Data Flow</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#ethics">Ethics</a>
+        <a href="#lessons">Reflection</a>
+        
+        <a href="#team">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO / HOME ================= -->
+    <section id="home" class="section section-hero" aria-labelledby="home-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 id="home-title">Unified AI Workforce Analytics Platform</h1>
+          <p class="hero-subtitle">
+            A master’s-level research project analyzing how AI adoption reshapes
+            technical roles, skills, and labor-market dynamics from 2010–2025.
+          </p>
+          <p class="hero-meta">
+            <strong>Project Name:</strong> ChronoIntel<br />
+            <strong>Focus Roles:</strong> Data Analyst, Data Engineer, Dashboard
+            Developer, IT Architect, Cybersecurity Analyst
+          </p>
+          <p class="hero-meta">
+            <strong>Team Name:</strong> Team 16 – NextStep Consulting<br />
+            <strong>Team Members:</strong> Patil, Dipesh Sanjay; Ramadasu, Venkata
+            Sriram; Kaieepeta, Sanjay; Pinninti, Harishwar Reddy; Maddhi,
+            Shashidhar Reddy
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#dashboard">View Dashboard</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Project at a glance">
+          <h2>At a Glance</h2>
+          <ul class="hero-list">
+            <li>2010–2025 longitudinal synthetic dataset</li>
+            <li>AI adoption, automation risk, salary & employment trends</li>
+            <li>Role-based insights for five technical careers</li>
+            <li>Interactive dashboard for multi-dimensional analysis</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= EXECUTIVE SUMMARY ================= -->
+    <section id="executive-summary" class="section" aria-labelledby="exec-title">
+      <div class="container">
+        <h2 class="section-title" id="exec-title">Executive Summary</h2>
+        <article class="card">
+          <p>
+            The Unified AI Workforce Analytics Platform, referred to as
+            <em>ChronoIntel</em>, examines the transformative impact of artificial
+            intelligence on five core technical roles—Data Analyst, Data Engineer,
+            Dashboard Developer, IT Architect, and Cybersecurity Analyst—from 2010
+            to 2025. Motivated by the accelerated pace of AI adoption and the
+            corresponding uncertainty experienced by employers, educators, and
+            jobseekers, the project addresses the absence of a consolidated,
+            interpretable framework for understanding workforce evolution.
+          </p>
+          <p>
+            Through a rigorously designed synthetic dataset inspired by global
+            labor organizations such as OECD, BLS, UNESCO, and the World Economic
+            Forum, ChronoIntel integrates trends in AI adoption, automation risk,
+            employment, salary, and skill demand into a cohesive analytical model.
+            The platform’s Power BI dashboard enables dynamic exploration of
+            longitudinal data, offering insights critical for curriculum
+            development, organizational planning, and individual career mobility.
+            Findings reveal consistent increases in AI adoption, declining
+            automation risk, growth in employment and salary trajectories, and
+            heightened demand for advanced technical skills. Collectively, the
+            platform demonstrates that AI is reshaping—not replacing—the technical
+            workforce and underscores the need for continuous upskilling and
+            data-driven decision-making.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= PROBLEM CONTEXT & STAKEHOLDERS ================= -->
+    <section id="problem-context" class="section section-alt" aria-labelledby="problem-title">
+      <div class="container">
+        <h2 class="section-title" id="problem-title">Problem Context & Stakeholders</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Problem Context</h3>
+            <p>
+              Artificial intelligence and automation have become defining forces
+              in the contemporary labor market. While organizations rapidly adopt
+              AI to enhance productivity and innovation, there is persistent
+              ambiguity about the implications for job displacement, skill
+              requirements, and long-term workforce stability. The lack of
+              standardized, accessible analytics limits stakeholders’ ability to
+              make informed strategic decisions.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Stakeholders</h3>
+            <ul class="bullet-list">
+              <li><strong>Employers:</strong> Need clarity on evolving job functions,
+                emerging skill gaps, and workforce planning.</li>
+              <li><strong>Higher Education Institutions:</strong> Require
+                evidence-based insights to align curricula with industry trends.</li>
+              <li><strong>Learners &amp; Jobseekers:</strong> Must understand skill
+                demand trends to navigate AI-driven labor markets.</li>
+              <li><strong>Policymakers & Workforce Agencies:</strong> Use analytics
+                to shape workforce-development and training initiatives.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESEARCH & INSIGHTS ================= -->
+    <section id="research-insights" class="section" aria-labelledby="research-title">
+      <div class="container">
+        <h2 class="section-title" id="research-title">Research & Key Insights</h2>
+        <article class="card">
+          <ul class="bullet-list">
+            <li>
+              AI adoption is positively associated with growth in data-intensive
+              and cloud-centric roles.
+            </li>
+            <li>
+              Automation risk decreases in environments that invest in upskilling
+              and modern technical infrastructure.
+            </li>
+            <li>
+              Salary and employment growth remain robust across most technical
+              roles, challenging narratives of widespread AI-driven job loss.
+            </li>
+            <li>
+              Skill demand is shifting toward automation tools, cloud platforms,
+              data engineering, cybersecurity, and visualization competencies.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= PROPOSED SOLUTION & ARCHITECTURE ================= -->
+    <section id="solution" class="section section-alt" aria-labelledby="solution-title">
+      <div class="container">
+        <h2 class="section-title" id="solution-title">Proposed Solution: ChronoIntel</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Solution Overview</h3>
+            <p>
+              ChronoIntel is an integrated analytics platform that consolidates AI
+              workforce data into a unified, interactive decision-support
+              environment. It enables stakeholders to explore how AI adoption
+              influences employment, salary trajectories, automation risk, and
+              skill demand over time.
+            </p>
+            <h4>Key Capabilities</h4>
+            <ul class="bullet-list">
+              <li>Role-based workforce monitoring across five technical careers.</li>
+              <li>AI adoption and automation-risk analysis at role and region level.</li>
+              <li>Temporal and regional filtering for longitudinal comparison.</li>
+              <li>Skill demand evolution indexed over time.</li>
+              <li>Interactive Power BI dashboard with DAX-driven KPIs.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Architecture Overview</h3>
+            <p>
+              The solution follows a layered architecture to maintain clarity,
+              scalability, and reproducibility.
+            </p>
+            <ul class="bullet-list">
+              <li><strong>Frontend:</strong> Project website plus embedded Power BI dashboard.</li>
+              <li><strong>Data Layer:</strong> Synthetic CSV dataset (2000+ rows).</li>
+              <li><strong>Semantic Layer:</strong> Power BI data model with relationships
+                and DAX measures.</li>
+              <li><strong>Visualization Layer:</strong> KPI cards, line charts, bar charts,
+                and combo charts with filters for year, role, and region.</li>
+            </ul>
+            <p class="note">
+              <em>Enterprise Architecture Diagram:</em> Insert an architecture image here
+              using an <code>&lt;img&gt;</code> tag if desired.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT CHARTER ================= -->
+    <section id="project-charter" class="section" aria-labelledby="charter-title">
+      <div class="container">
+        <h2 class="section-title" id="charter-title">Project Charter</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Overview & Purpose</h3>
+            <p>
+              The Unified AI Workforce Analytics Platform, <strong>ChronoIntel</strong>,
+              is a master’s-level research initiative that examines how AI adoption
+              reshapes technical roles, workforce demand, and skill requirements
+              between 2010 and 2025.
+            </p>
+            <p>
+              The project aims to deliver an integrated analytics environment that
+              enables employers, educators, and learners to interpret workforce
+              trends through a data-driven, visually intuitive dashboard.
+            </p>
+            <h4>Objectives</h4>
+            <ul class="bullet-list">
+              <li>Integrate workforce, AI, and skill indicators into a unified dataset.</li>
+              <li>Visualize AI evolution, labor transitions, and skill gaps.</li>
+              <li>Support evidence-based decision-making for multiple stakeholders.</li>
+              <li>Ensure ethical and secure handling of synthetic data.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Scope, Constraints & Success Criteria</h3>
+            <h4>Scope</h4>
+            <ul class="bullet-list">
+              <li>Design of a synthetic, research-aligned workforce dataset.</li>
+              <li>Development of a Power BI dashboard with role-based filters.</li>
+              <li>Integration of AI metrics, employment trends, and skill indicators.</li>
+              <li>Publication of a portfolio-ready project website.</li>
+            </ul>
+            <h4>Constraints</h4>
+            <ul class="bullet-list">
+              <li>Reliance on synthetic rather than proprietary microdata.</li>
+              <li>Time-bounded implementation within a single academic term.</li>
+              <li>Scope limited to five technical roles and selected regions.</li>
+            </ul>
+            <h4>Success Criteria</h4>
+            <ul class="bullet-list">
+              <li>A coherent dataset suitable for longitudinal analysis.</li>
+              <li>A functional, interactive dashboard with clear KPIs.</li>
+              <li>A well-structured project website for academic and professional use.</li>
+              <li>Ability to communicate key findings to diverse audiences.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DATA DESIGN ================= -->
+    <section id="data-design" class="section" aria-labelledby="data-title">
+      <div class="container">
+        <h2 class="section-title" id="data-title">Data Design & Model</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Dataset Overview</h3>
+            <p>
+              The dataset comprises over 2,000 synthetic records constructed using
+              rules inspired by OECD, BLS, UNESCO, and WEF indicators.
+            </p>
+            <ul class="bullet-list">
+              <li>Time span: 2010–2025.</li>
+              <li>Roles: Data Analyst, Data Engineer, Dashboard Developer,
+                  IT Architect, Cybersecurity Analyst.</li>
+              <li>Metrics: AI Adoption Rate, Automation Risk, Salary, Employment,
+                  Skill Demand Index, Region.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Conceptual Structure</h3>
+            <p>
+              The model links workforce information with AI transformation metrics
+              and skill indicators, enabling analysis by role, region, and time.
+            </p>
+            <ul class="bullet-list">
+              <li><strong>Job_Info:</strong> Year, Role_ID, Job_Role, Region,
+                  Employment_Count, Salary.</li>
+              <li><strong>AI_Metrics:</strong> AI_Adoption_Rate, Automation_Risk,
+                  AI_Impact_Level, New_Tools_Adoption.</li>
+              <li><strong>Skill_Info:</strong> Skill_Name, Skill_Category,
+                  Skill_Demand_Index, Future_Skill_Growth, Future_Skill_to_Adopt.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ER DIAGRAM ================= -->
+    <section id="er-diagram" class="section section-alt" aria-labelledby="erd-title">
+      <div class="container">
+        <h2 class="section-title" id="erd-title">ER Diagram – Data Model Structure</h2>
+
+        <article class="card">
+          <p>
+            The data model consists of three relational tables that support
+            multi-dimensional analysis of workforce trends, AI metrics, and skill
+            evolution. The core table <strong>Job_Info</strong> stores temporal,
+            regional, and employment-related data for each technical role. It
+            connects to <strong>AI_Metrics</strong> and <strong>Skill_Info</strong>
+            in one-to-many relationships, enabling detailed analysis of AI
+            adoption patterns and skill demand indicators.
+          </p>
+        </article>
+
+        <article class="card mt-md">
+          <h3>Entity–Relationship Diagram</h3>
+          <img src="er_diagram.png" alt="Entity–Relationship diagram for ChronoIntel data model" class="img-full-rounded" />
+          <h3>Architecture Diagram</h3>
+          <img src="Professional Workforce Architecture.png" alt="diagram"  class="img-full-rounded" />
+          <h3>Enterprise Architecture Diagram</h3>
+          <img src="EA Diagram - Unified AI Workforce.png" alt="diagram"  class="img-full-rounded" />
+          
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= DATA FLOW ================= -->
+    <section id="data-flow" class="section" aria-labelledby="dataflow-title">
+      <div class="container">
+        <h2 class="section-title" id="dataflow-title">Data Flow</h2>
+        <article class="card">
+          <ol class="numbered-list">
+            <li>Synthetic dataset generated using predefined statistical rules.</li>
+            <li>CSV imported into Power BI as the primary data source.</li>
+            <li>Relationships established between Job_Info, AI_Metrics, and Skill_Info.</li>
+            <li>DAX measures created for KPIs such as growth rates and risk deltas.</li>
+            <li>Dashboard visuals constructed to support dynamic exploration and storytelling.</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= DASHBOARD & ANALYSIS ================= -->
+    <section id="dashboard" class="section section-alt" aria-labelledby="dashboard-title">
+      <div class="container">
+        <h2 class="section-title" id="dashboard-title">Dashboard & Data Analysis</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Key Analytical Insights</h3>
+            <ul class="bullet-list">
+              <li><strong>AI Adoption vs Automation Risk:</strong> AI adoption
+                more than doubles while automation risk declines by roughly
+                25–30 points, particularly in engineering and architecture roles.</li>
+              <li><strong>Employment & Salary Growth:</strong> Employment grows
+                around 6% per year while salaries increase approximately 3%
+                annually, indicating net job creation in technical fields.</li>
+              <li><strong>Skill Demand Index:</strong> The index rises from the
+                mid-50s to above 80, reflecting increasing demand for advanced
+                technical skills and multi-disciplinary capabilities.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Interactive Dashboard</h3>
+            <p>
+              The Power BI dashboard enables interactive filtering by role, year,
+              and region, and exposes KPI cards, trend lines, and comparative charts.
+            </p>
+            <p class="note">
+              Replace the placeholder below with your actual Power BI embed code.
+            </p>
+            <div class="dashboard-embed" aria-label="Dashboard placeholder">
+              <!-- Example (replace src with your actual embed URL):
+              <iframe title="ChronoIntel Dashboard"
+                      src="YOUR_POWER_BI_EMBED_URL"
+                      frameborder="0"
+                      allowfullscreen></iframe>
+              -->
+              <p class="placeholder-text">
+  <a href="https://app.powerbi.com/view?r=eyJrIjoiYzUyYTc4OWYtMmExMi00Mjg5LWFmOTYtZmQyOGJkNzg1MDliIiwidCI6ImNiMGNiZDgzLTU4ZGQtNDVhNS1hYWViLTc5Y2M0NDBmYjAzOCIsImMiOjF9" 
+     target="_blank" 
+     style="color: #0078d4; text-decoration: underline;">
+    Power BI - Dashboard
+  </a>
+</p>
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ETHICAL & SOCIAL CONSIDERATIONS ================= -->
+    <section id="ethics" class="section" aria-labelledby="ethics-title">
+      <div class="container">
+        <h2 class="section-title" id="ethics-title">Ethical & Social Considerations</h2>
+        <article class="card">
+          <ul class="bullet-list">
+            <li>
+              <strong>Data Interpretation:</strong> Avoid overstating causality
+              or using analytics to justify discriminatory practices.
+            </li>
+            <li>
+              <strong>Equity & Representation:</strong> Acknowledge regional and
+              role-based disparities in access to upskilling opportunities.
+            </li>
+            <li>
+              <strong>Narrative Framing:</strong> Emphasize workforce resilience
+              and responsible AI adoption rather than fear-based automation
+              narratives.
+            </li>
+            <li>
+              <strong>Transparency:</strong> Clearly communicate that the dataset
+              is synthetic and modeled on public indicators rather than
+              individual-level sensitive data.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= LESSONS LEARNED & TEAM REFLECTION ================= -->
+    <section id="lessons" class="section section-alt" aria-labelledby="lessons-title">
+      <div class="container">
+        <h2 class="section-title" id="lessons-title">Lessons Learned & Team Reflection</h2>
+        <article class="card">
+          <ul class="bullet-list">
+            <li>
+              Integrating multi-source indicators into a unified dataset requires
+              rigorous consistency, validation, and domain understanding.
+            </li>
+            <li>
+              Effective dashboard design is central to communicating complex
+              analytics to non-technical stakeholders.
+            </li>
+            <li>
+              Ethical framing of insights is as important as the metrics
+              themselves, particularly in workforce analytics.
+            </li>
+            <li>
+              Collaboration across data modeling, visualization, and research
+              roles strengthened both technical and analytical skills.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    
+
+    <!-- ================= TEAM SECTION ================= -->
+    <section id="team" class="section section-alt" aria-labelledby="team-title">
+      <div class="container">
+        <h2 class="section-title" id="team-title">Team 16 – NextStep Consulting</h2>
+
+        <article class="card">
+          <p>
+            The ChronoIntel project was completed by <strong>Team 16 – NextStep Consulting</strong>,
+            a graduate team with complementary strengths in data analytics, business processes,
+            dashboard development, data science, and systems architecture.
+          </p>
+        </article>
+
+        <article class="card mt-md" aria-label="Team members and their roles">
+          <h3>Team Members &amp; Assigned Roles</h3>
+
+          <div class="table-responsive">
+            <table class="team-table">
+              <thead>
+                <tr>
+                  <th scope="col">Team Member</th>
+                  <th scope="col">Assigned Role</th>
+                  <th scope="col">Rationale (Short)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Patil, Dipesh Sanjay</td>
+                  <td>Data Analyst</td>
+                  <td>Dipesh analyzes data and extracts insights that support the team's findings.</td>
+                </tr>
+                <tr>
+                  <td>Ramadasu, Venkata Sriram</td>
+                  <td>Business Process Analyst</td>
+                  <td>Sriram connects business needs with technical solutions and identifies process gaps.</td>
+                </tr>
+                <tr>
+                  <td>Kaieepeta, Sanjay</td>
+                  <td>Data Scientist</td>
+                  <td>Sanjay applies statistical and machine learning techniques to analyze workforce data.</td>
+                </tr>
+                <tr>
+                  <td>Pinninti, Harishwar Reddy</td>
+                  <td>Dashboard Developer</td>
+                  <td>Harish creates clear, interactive dashboards that present insights effectively.</td>
+                </tr>
+                <tr>
+                  <td>Maddhi, Shashidhar Reddy</td>
+                  <td>IT Architect</td>
+                  <td>Shashidhar designs the system structure and ensures scalability and integration.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card mt-md">
+          <h3>Thank You</h3>
+          <p>
+            Thank you for reviewing the Unified AI Workforce Analytics Platform (ChronoIntel).
+            Our team appreciates your time and welcomes any feedback.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        &copy; <span id="year"></span> ChronoIntel – Unified AI Workforce Analytics Platform
+      </p>
+      <p class="footer-meta">Created as part of a Master's Research Project.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
